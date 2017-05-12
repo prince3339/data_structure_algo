@@ -12,7 +12,7 @@ long long gcd(long long a, long long b) {
     }
 }
 int main() {
-    long long a = 10, b = 15;
+    long long a = 18, b = 35;
 
     long long r = gcd(a, b);
 
