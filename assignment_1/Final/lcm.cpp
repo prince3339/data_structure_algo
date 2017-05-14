@@ -14,7 +14,8 @@ long long gcd(long long a, long long b) {
 int main() {
     long long a = 0, b = 0;
     cin >> a >> b;
-    long long r = gcd(a, b);
 
-    cout << r << endl;
+    long long lcm = (a*b)/gcd(a, b);
+
+    cout << lcm << endl;
 }
