@@ -16,6 +16,20 @@ long long get_fibonacci_huge_naive(long long n, long long m) {
     return current % m;
 }
 
+long long get_fibonacci_huge_fast(long long n, long long m) {
+    long long fiblist[n];
+
+    fiblist[0] = 0;
+    fiblist[1] = 1;
+
+    for(int i = 2; i<= n; ++i) {
+        fiblist[i] = (fiblist[i - 1] + fiblist[i - 2])%m;
+        //cout << fiblist[i] << endl;
+    }
+
+    return fiblist[n];
+}
+
 int main() {
     long long n, m;
     std::cin >> n >> m;
